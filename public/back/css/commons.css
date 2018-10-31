@@ -1,9 +1,9 @@
 
-/* .table.table-bordered th,
+.table.table-bordered th,
 .table.table-bordered td {
   vertical-align: middle;
   text-align: center;
-} */
+}
 
 .red{
   color: red;
@@ -107,6 +107,7 @@ ul {
   top: 0;
   padding-left: 180px;
   transition: all 1s;
+  z-index: 666;
 }
 .lt_main .lt_topber a{
   color: #fff;
@@ -125,4 +126,14 @@ ul {
 .lt_main  .lt_content{
   padding-top: 50px;
   margin: 10px;
+}
+
+.centent{
+  padding: 15px;
+}
+.centent .echarts-left,
+.centent .echarts-right{
+  width: 48%;
+  height: 400px;
+  /* background: blue; */
 }
