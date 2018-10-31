@@ -1,0 +1,114 @@
+
+/* .table.table-bordered th,
+.table.table-bordered td {
+  vertical-align: middle;
+  text-align: center;
+} */
+
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* li{
+  list-style: none;
+} */
+.lt_aside{
+  width: 180px;
+  height: 100%;
+  background:#222D32; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.lt_aside .brand{
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background:#367FA9;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  
+}
+.lt_aside .user{
+  height: 180px;
+  width: 180px;
+  padding-top: 20px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+}
+.lt_aside .user p{
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.lt_aside .nav a{
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav .active{
+  border-left:3px solid #367FA9;
+  background-color: #1D1F21;
+  
+}
+
+.lt_aside .nav .child a{
+  padding-left: 60px;
+}
+
+
+
+/* 右边主体 */
+.lt_main{
+  padding-left: 180px;
+  height: 1000px;
+
+}
+.lt_main .lt_topber{
+  width: 100%;
+  height: 50px;
+  background: #3C8DBC;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-left: 180px;
+}
+.lt_main .lt_topber a{
+  color: #fff;
+  font-size: 20px;
+}
+
+.lt_main .lt_topber .icon_menu,
+.lt_main .lt_topber .icon_logout{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.lt_main  .lt_content{
+  padding-top: 50px;
+  margin: 10px;
+}
