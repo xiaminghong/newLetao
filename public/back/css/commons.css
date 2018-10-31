@@ -5,7 +5,9 @@
   text-align: center;
 } */
 
-
+.red{
+  color: red;
+}
 a:link,
 a:visited,
 a:hover,
@@ -29,6 +31,11 @@ ul {
   left: 0;
   top: 0;
   z-index: 999;
+  transition: all 1s;
+}
+/* 隐藏侧边 */
+.lt_aside.hidemenu{
+  left: -180px;
 }
 .lt_aside .brand{
   height: 50px;
@@ -78,12 +85,18 @@ ul {
 }
 
 
-
 /* 右边主体 */
 .lt_main{
   padding-left: 180px;
   height: 1000px;
-
+  transition: all 1s;
+}
+/* 隐藏侧边 */
+.lt_main.hidemenu{
+  padding-left: 0px;
+}
+.lt_main .lt_topber.hidemenu{
+  padding-left: 0px;
 }
 .lt_main .lt_topber{
   width: 100%;
@@ -93,6 +106,7 @@ ul {
   right: 0;
   top: 0;
   padding-left: 180px;
+  transition: all 1s;
 }
 .lt_main .lt_topber a{
   color: #fff;
