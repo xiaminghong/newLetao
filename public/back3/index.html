@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+	<link rel="stylesheet" href="./css/commons.css">
 </head>
+
 <body>
-	这是后台管理系统
+	<div class="lt_aside">
+		<div class="lt_header">
+			<p>黑马28期</p>
+		</div>
+		<div class="lt_photo">
+			<img src="./images/default.png" alt="">
+			<p>超级管理员</p>
+		</div>
+		<div class="lt_nav">
+			<ul>
+				<li  class="active">
+					<a href="#">
+						<i class="glyphicon glyphicon-user"></i>
+						<span>用户管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-list"></i>
+						<span>分类管理</span>
+					</a>
+					<div class="child" >
+							<a href="#">一级分类</a>
+							<a href="#">二级分类</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-tags"></i>
+						<span>商品管理</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="lt_content">
+		<div class="lt_content_head">
+			<a href="#" class="pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
+			<a href="#" class="pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
+		</div>
+		<div class="lt_content_body">
+				<ol class="breadcrumb">
+					<li><a href="#">管理系统</a></li>
+					<li class="active">首页</li>
+				</ol>
+		</div>
+	</div>
+	<script src="./lib/jquery/jquery.min.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 </body>
+
 </html>
