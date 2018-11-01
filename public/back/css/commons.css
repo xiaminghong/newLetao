@@ -79,6 +79,9 @@ ul {
   background-color: #1D1F21;
   
 }
+.mb_20{
+  margin-bottom: 20px;
+}
 
 .lt_aside .nav .child a{
   padding-left: 60px;
