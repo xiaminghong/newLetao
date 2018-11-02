@@ -86,7 +86,12 @@ ul {
 .lt_aside .nav .child a{
   padding-left: 60px;
 }
-
+img{
+  height: 50px;
+}
+.form-group img{
+  height: 100px;
+}
 
 /* 右边主体 */
 .lt_main{
