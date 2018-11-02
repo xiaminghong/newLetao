@@ -60,6 +60,8 @@ var id = $(this).data("id");
 console.log(id);
 $('[name="categoryId"]').val( id );
 
+$('#form').data('bootstrapValidator').updateStatus('categoryId','VALID')
+
 })
 
 
