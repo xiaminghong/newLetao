@@ -5,6 +5,19 @@ ul{
   padding: 0;
   list-style: none;
 }
+a{
+  display: block;
+}
+
+img{
+  width: 100%;
+  display: block;
+
+}
+.lt_header a{
+  display: block;
+  color: #fff;
+}
 body,html{
   height: 100%;
   width: 100%;
@@ -62,14 +75,14 @@ body,html{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 55px;
+  height: 57px;
   background: #006699;
 }
 .lt_container .lt_footer li{
   float: left;
   width: 25%;
   text-align: center;
-  margin-top: 5px;
+  padding-top: 5px;
 }
 .lt_container .lt_footer li a{
   color: #fff;
@@ -89,5 +102,38 @@ body,html{
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: skyblue;
+  background-color: #fff;
+}
+
+
+
+/* 商品区 */
+.lt_main .lt_product{
+  padding: 10px;
+}
+.lt_main .lt_product li{
+  float: left;
+  width: 48%;
+  border: 1px solid #666;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.lt_main .lt_product li:nth-child(2n-1){
+  margin-right: 4%;
+}
+.lt_main .lt_product li a{
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+.lt_main .lt_product li img {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+.lt_main .lt_product .red{
+  color: red;
+}
+.lt_main .lt_product .del{
+  text-decoration: line-through;
 }
