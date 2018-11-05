@@ -47,9 +47,10 @@ $(function () {
     render();
 
   })
-  // 添加功能
 
+  // 添加功能
   $('.lt_search .mui-btn').click(function(){
+    // 获取用户输入的关键字
     var key=$('.search_input').val().trim();
     // console.log(key);
     // 判断是否为空
@@ -57,26 +58,30 @@ $(function () {
       mui.toast('请输入关键字');
       return;
     }
+    // 本地
     var arr=getHistory();
     // console.log(arr);
     var index=arr.indexOf(key);
     console.log(index);
+    // 判断是否重复
     if (index!=-1) {
       arr.splice(index,1)
     }
+    // 判断长度是否为10
     if (arr.length>=10) {
       arr.pop();
     }
     
 
-
+    // 添加到数组前面
     arr.unshift(key);
 
     localStorage.setItem('search_list',JSON.stringify(arr));
     render();
+    // 清空用户输入
     $('.search_input').val('');
      
-    location.href="searchList.html";
+    location.href="searchList.html?key="+key;
     
   })
 
