@@ -6,10 +6,15 @@ $(function(){
     dataType:'json',
     success:function(info){
       console.log(info);
+      if (info.error==400) {
+        location.href='login.html?retUrl='+location.href;
+      }
       
-      
-      var htmlStr=template('cart_tpl',{list:info});
+      if (info.success) {
+        var htmlStr=template('cart_tpl',{list:info});
       $('.lt_main .mui-scroll').html(htmlStr);
+      }
+      
       
     }
   })
